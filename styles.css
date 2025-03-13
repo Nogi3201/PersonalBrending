@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+}
+header {
+    padding: 50px;
+    background-color: #222;
+}
+.about, .contact {
+    margin: 50px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
